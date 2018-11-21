@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food menu</title>
+    <link rel="stylesheet" type="text/css" href="/css/Admin_page_style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/admin_menu_style.css"/>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="/admin_stocks.js"></script>
+    <script src="/admin_menu.js"></script>
+    <script src="/admin_orders.js"></script>
+    <script src="/admin_finance.js"></script>
+    <script src="/admin_users.js"></script>
+    <script src="/admin_page.js"></script>
+    <script src="/popups.js"></script>    
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="container">
+            <div class="header_logo">
+                <a href="/" class="logo">
+                    <img src="/images/logo_2_3.png" alt="" class="logo_pic">
+                </a>
+
+            </div>
+
+            <div class="header_menu">
+                <ul class="menu">
+
+                    <li class="menu_item">
+                        <a href="/#food_menu" class="menu_link">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">About</span>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="./#contacts" class="menu_link">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="/Foodmenu" class="menu_link">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">Menu</span>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text" id="log_in_selector">Log In</span>
+                        </a>
+                    </li>
+                    <div class="menu_after"></div>
+
+                </ul>
+                <div class="mobile_menue">
+                    <ul class="icon">
+                        <li class="mob_menue icon1"></li>
+                        <li class="mob_menue icon2"></li>
+                        <li class="mob_menue icon3"></li>
+                    </ul>
+                    <nav class="mobile_vertical_menue">
+                        <li class="vert_menue_item"><a href="./Food_menu.html">Menu</a></li>
+                        <li class="vert_menue_item"><a href="./index.html#events">Events</a></li>
+                        <li class="vert_menue_item"><a href="./index.html#contacts">Contacts</a></li>
+                        <li class="vert_menue_item"><a href="#">Log in</a></li>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </header>
+</div>
+    <div class="desktop">
+    <div class="buttons">
+
+        <ul>
+            <li><input class="button" id="menu_button"  type="button" value="Menu" name="menue"></li>
+            <li><input class="button" id="stock_button" type="button" value="Stock" name="stock"></li>
+            <li><input class="button" id="orders_button" type="button" value="Orders" name="orders"></li>
+            <li><input class="button" id="users_button"  type="button" value="Users" name="users"></li>
+            <li><input class="button" id="finance_button" type="button" value="Finance" name="finance"></li>
+        </ul>
+    </div>
+    <div class="content" id="content"></div>
+
+
+    </div>
+    </div>
+
+
+
+    <!--popups-->
+    <div class="popup_container">
+        <!--login popup-->
+        <div class="login_popup popup slide_in">
+            <h2>PLease, enter your credentials</h2>
+            <form name="login_popup">
+                <p>Enter login:</p>
+                <input type="text" name="login" placeholder="login">
+                <p>Enter password</p>
+                <input type="password" name="password">
+                
+                <div class="login_form_control">
+                <input type="submit" value="OK" id="login_submit_button">
+                <button type="button" class="popup_close_button">Close</button>
+                </div>        
+            </form>
+            <p>Do not have login? Please, <span id="registration_button">register</span>.</p>
+        </div>
+    
+        <!--Registration popup-->
+        <div class="reg_popup popup slide_in">
+            <h2>Please, register.</h2>
+            <form name="reg_form">
+                <p>Enter Name</p>
+                <input type="text" name="name" placeholder="John">
+                <p>Enter Surname</p>
+                <input type="text" name="surname" placeholder="Doe">
+                <p>Enter your E-mail</p>
+                <input type="text" name="mail" placeholder="JDoe@mail.com">
+                <p>Enter your login</p>
+                <input type="text" name="login" placeholder="login">
+                <p>Enter password</p>
+                <input type="password" name="password" placeholder="">
+                
+                <div class="reg_form_control">
+                <input type="submit" value="OK" id="registration_submit_button">
+                <button type="button" class="popup_close_button">Close</button>
+                </div>
+            </form>
+        </div>
+    
+    
+    <!--end of popup container-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

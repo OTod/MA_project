@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food menu</title>
+    <link rel="stylesheet" type="text/css" href="/css/food_menu_style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/Admin_page_style.css"/>
+    <script src="/Food_menu.js"></script>
+    <script src="/popups.js"></script>    
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header_logo">
+                    <a href="/" class="logo">
+                        <img src="/images/logo_2_3.png" alt="" class="logo_pic">
+                    </a>
+
+                </div>
+
+                <div class="header_menu">
+                    <ul class="menu">
+
+                        <li class="menu_item">
+                            <a href="./#food_menu" class="menu_link">
+                                <span class="menu_link_icon"></span>
+                                <span class="menu_link_text">About</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="./#contacts" class="menu_link">
+                                <span class="menu_link_icon"></span>
+                                <span class="menu_link_text">Contacts</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="/Foodmenu" class="menu_link">
+                                <span class="menu_link_icon"></span>
+                                <span class="menu_link_text">Menu</span>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">
+                                <span class="menu_link_icon"></span>
+                                <span id="log_in_selector" class="menu_link_text">Log In</span>
+                            </a>
+                        </li>
+                        <div class="menu_after"></div>
+                    </ul>
+                    <div class="mobile_menue">
+                        <ul class="icon">
+                            <li class="mob_menue icon1"></li>
+                            <li class="mob_menue icon2"></li>
+                            <li class="mob_menue icon3"></li>
+                        </ul>
+                        <nav class="mobile_vertical_menue">
+                            <li class="vert_menue_item"><a href="./foodmenu">Menu</a></li>
+                            <li class="vert_menue_item"><a href="./#events">Events</a></li>
+                            <li class="vert_menue_item"><a href="./#contacts">Contacts</a></li>
+                            <li class="vert_menue_item"><a href="#">Log in</a></li>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="menu"></div>
+
+        <!--вот тут надо продолжить с контейнером для заказа-->
+        <div class="order_line">
+            <div class="order_container">
+                <div class="crate_image">
+                    <img src="" alt="crate">
+                </div>
+                <div class="order_notation">
+                    <p class="order_notation_text">0 items with total cost of 0</p>
+                </div>
+                <button class="order_button" id="order-approve">Approve order</button>
+                <button class="order_button" id="clear_crate">Clear crate</button>
+            </div>
+        </div>
+        <div class="container menu_container">
+
+            <div class="row_grill row">
+                <h1 class="row_header">Grill menu</h1>
+                <ul id="grills">
+                    <!--
+
+                    <li class="food_card">
+                        <div class="food_card_rowLeft">
+                            <div class="upper_line">
+                                <div class="name_price">
+                                    <p class="name">Grilled smth with something and something</p>
+                                    <p class="price">99.99$</p>
+                                </div>
+                                <div class="contents_short">
+                                    <p>Ingredients: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="lower_line_text">
+                                <h3 class="description_header">What the...?</h3>
+                                <p class="description_text">juicy burger cooked using lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food_card_rowRight">
+                            <h2 class="food_card_button">+</h2>
+                            <p class="amount_selected">10</p>
+                            <h2 class="food_card_button">-</h2>
+                        </div>
+                    </li>
+-->
+
+                </ul>
+            </div>
+            <div class="row_burgers row">
+                <h1 class="row_header">Burgers</h1>
+                <ul id="burgers">
+                    <!--
+                    <li class="food_card">
+                        <label for="burger1">
+
+                            <div class="upper_line">
+
+                                <div class="name_price">
+
+                                    <p class="name">Burger with something and something</p>
+                                    <p class="price">99.99$</p>
+
+                                </div>
+                                <div class="contents_short">
+
+                                    <p>Ingredients: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <input class="switch" id="burger1" type="checkbox"><span class="triangle"></span>
+                            <div class="lower_line">
+                                <div class="lower_line_text">
+                                    <h3 class="description_header">What the...?</h3>
+                                    <p class="description_text">juicy burger cooked using lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam autem commodi dolorem eaque, expedita
+                                        fugit illo impedit ipsa magni modi nisi officia optio possimus provident quam
+                                        quasi quo sapiente sed tempora tempore tenetur velit vitae?</p>
+                                    <h3 class="ingredients_header">Ingredients</h3>
+                                    <p class="ingredients_text">Lorem ipsum, fresh dolor sit amet, few chops of
+                                        consectetur</p>
+
+                                </div>
+                                <div class="lower_line_info">
+                                    <div class="time_of_preparation">
+                                        <h3>Time of preparation:</h3>
+                                        <h3 class="mins">0 mins</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+-->
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="orders_total_popup_wrapper">
+
+            <div class="orders_total_popup_container">
+                <div class="popup_content">
+                    <h2>Please, approve the order</h2>
+                    <div class="orderItems">
+
+                    </div>
+                    <div class="total_and_buttons">
+                        <p class="total">Total price: xxxxx </p>
+                        <button class="orders_buttons" id="total_order_decline">Close</button>
+                        <button class="orders_buttons" id="total_order_approve">Approve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="empty"></div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="container footer_items">
+
+
+            <div class="footer_item">
+                <div class="sprites">
+                    <a href="#">
+                        <div class="sprite fb"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sprite twitter"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sprite telegram"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sprite instagram"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_item">
+
+                Web-site was created for educational purposes only. <br><br>
+                Main Academy Mykolaiv. <br>
+                2018.
+
+            </div>
+            <div class="footer_item">
+                For any additional info:
+                <address>
+                    <strong>phone</strong>: +1 234-567-89
+                </address>
+            </div>
+            <div class="footer_item">
+                <a href="#">Privacy policy</a><br><br>
+                <a href="#">Terms of use</a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </footer>
+    <!--popups-->
+    <div class="popup_container">
+        <!--login popup-->
+        <div class="login_popup popup slide_in">
+            <h2>PLease, enter your credentials</h2>
+            <form name="login_popup">
+                <p>Enter login:</p>
+                <input type="text" name="login" placeholder="login">
+                <p>Enter password</p>
+                <input type="password" name="password">
+                
+                <div class="login_form_control">
+                <input type="submit" value="OK" id="login_submit_button">
+                <button type="button" class="popup_close_button">Close</button>
+                </div>        
+            </form>
+            <p>Do not have login? Please, <span id="registration_button">register</span>.</p>
+        </div>
+    
+        <!--Registration popup-->
+        <div class="reg_popup popup slide_in">
+            <h2>Please, register.</h2>
+            <form name="reg_form">
+                <p>Enter Name</p>
+                <input type="text" name="name" placeholder="John">
+                <p>Enter Surname</p>
+                <input type="text" name="surname" placeholder="Doe">
+                <p>Enter your E-mail</p>
+                <input type="text" name="mail" placeholder="JDoe@mail.com">
+                <p>Enter your login</p>
+                <input type="text" name="login" placeholder="login">
+                <p>Enter password</p>
+                <input type="password" name="password" placeholder="">
+                
+                <div class="reg_form_control">
+                <input type="submit" value="OK" id="registration_submit_button">
+                <button type="button" class="popup_close_button">Close</button>
+                </div>
+            </form>
+        </div>
+    
+    
+    <!--end of popup container-->
+    </div>
+
+
+
+</body>
+
+</html>

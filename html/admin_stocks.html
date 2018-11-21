@@ -1,0 +1,69 @@
+<div class="buttons_container">
+    <div class="button_row">
+        <button class="menu_buttons" type="button" id="stocks_add_item">Add item</button>
+
+
+    </div>
+</div>
+
+
+<div class="stock_fill_popup_wrapper">
+    <div class="popup_background"></div>
+    <div class="stock_popup_container">
+        <div class="stock_fill_popup_header"></div>
+
+        <form name="adding_quantity_and_expierydate" class="stock_fill_popup_form">
+            <div class="row4">
+                <label>Q-ty:</label>
+                <input type="text" size="4" name="q_ty">
+                <label>Expires in:</label>
+                <input type="text" size="4" name="expires_in">
+            </div>
+            <div class="buttons_row_stocks_update row1">
+                <button class="stocks_update_buttons_top" type="button">Add</button>
+            </div>
+        </form>
+
+        <div class="stock_fill_popup_content">
+            <div class="row4">
+                <select name="" size="5" id="quantity_and_expierydate_select" class="">
+
+                </select>
+            </div>
+            <div class="stocks_update_buttons row1">
+                <ul>
+                    <!--<li><button>Add</button></li>-->
+                    <li><button id="removeBtn" class="stocks_update_buttons">Remove</button></li>
+                    <li><button id="stock_item_total_removal" class="stocks_update_buttons">Remove all</button></li>
+                    <li><button id="btnOK" class="stocks_update_buttons">Close</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="stocks_add_popup_wrapper">
+    <div class="menu_popup_container">
+        <div class="popup_content">
+            <div class="menu_add_popup_header"> Add an item to menu </div>
+
+            <form name="adding_stock_item">
+                <div class="flex">
+                    <label for="">Name:</label>
+                    <input name="name" type="text" required>
+                </div>
+                <div class="flex">
+                    <label for="">units</label>
+                    <input name="units" type="text" required>
+                </div>
+
+                <div class="flex">
+                    <button>OK</button>
+                    <button type="button" id="stock_item_add_cancel_button">Cancel</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

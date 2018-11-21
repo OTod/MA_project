@@ -1,0 +1,85 @@
+#content{
+    position: relative;
+}
+
+.buttons_container{
+    width:90%;
+    position: absolute;
+    bottom:0;
+}
+
+.button_row{
+    width: 100%;
+    display: flex;
+   
+    
+}
+
+.menu_buttons{
+    flex: 1;
+    background:black;
+    border-radius: 1em;
+    border:1px solid white;
+    margin:10px;
+    color:white;
+    font-size:1em;
+    width: 20em;
+    height:3em;
+    
+}
+.menu_popup_container{
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.popup_content{
+    background: rgba(0,0,0,1);
+    display: block;
+    border: 2px solid white;
+    margin:  auto;
+    width: 30%;
+    color:white;
+    margin-top:10%;
+    border-radius:10px;
+}
+.menu_add_popup_header{
+    background:brown;
+    padding:0.5em;
+    border-radius:8px;
+}
+.popup_content form{
+    padding:0.5em;
+}
+.popup_content form div{
+    padding:0.5em;
+
+}
+.ingredients_item{
+    padding: 0px;
+}
+.flex{
+    display: flex;
+}
+.flex *{
+    flex:1;
+}
+.ingredients{
+    display: block;
+}
+
+
+/*This toggles the popup to appear/disappear*/
+.menu_add_popup_wrapper{
+    display: none;
+}
+.menu_content:after{
+    content:'';
+    height:30px;
+    display: block;
+    visibility:hidden;
+}

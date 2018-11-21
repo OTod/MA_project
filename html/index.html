@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <script src="/jquery-3.3.1.js"></script>
+    <script src="/parallax.js"></script>
+    <script src="/script.js"></script>
+    <script src="/popups.js"></script>
+</head>
+<body>
+
+
+<div class="wrapper">
+<!-------------------------------------------------------------------------------------------Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header_logo">
+                <a href="#" class="logo">
+                    <img src="/images/logo_2_3.png" alt="" class="logo_pic">
+                </a>
+            </div>
+
+            <!----------------------------------------------------------------------------Header-menu-->
+            <div class="header_menu">
+                <ul class="menu">
+
+                    <li class="menu_item">
+                        <a href="#food_menu" class="menu_link" id="menu_link_about">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">About</span>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#contacts" class="menu_link" id="menu_link_contacts">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="/Foodmenu" class="menu_link">
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text">Menu</span>
+                        </a>
+                    </li>
+                    <li class="menu_item" >
+                        <a href="#" class="menu_link" >
+                            <span class="menu_link_icon"></span>
+                            <span class="menu_link_text" id="log_in_selector">Log In</span>
+                        </a>
+                    </li>
+                    <div class="menu_after"></div>
+
+                </ul>
+                <!------------------------------------------------------------------Header-menu.mobile version-->
+                <div class="mobile_menue">
+                    <ul class="icon">
+                        <li class="mob_menue icon1"></li>
+                        <li class="mob_menue icon2"></li>
+                        <li class="mob_menue icon3"></li>
+                    </ul>
+                    <nav class="mobile_vertical_menue">
+                        <li class="vert_menue_item"><a href="./Food_menu.html">Menu</a></li>
+                        <li class="vert_menue_item"><a href="#food_menu">About</a></li>
+                        <li class="vert_menue_item"><a href="#contacts">Contacts</a></li>
+                        <li class="vert_menue_item"><a href="#">Log in</a></li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<!-----------------------------------------------------------------------------------------------Carousel------------------->
+    <section class="pictures-prevue">
+       <!--parallax start-->
+        <div class="parallax-window-top" data-parallax="scroll" data-image-src="/images/1.jpg">
+            <div class="container">
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                    <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2" >
+                        <input type="radio" name="slider" id="switch3">
+                        <input type="radio" name="slider" id="switch4">
+                        <input type="radio" name="slider" id="switch5">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <article><img src="/images/1.png" alt="interrior"><div class="lower_text"></div></article>
+                                    <article><img src="/images/Royal-Oak-NW10-quirky-and-unusual-003-1200x800.jpg" alt="interrior"><div class="lower_text">Lorem ipsum dolor sit amet.</div></article>
+                                    <article><img src="/images/Grill-Do-Brasil-Chicken.jpg" alt="interrior"><div class="lower_text">Lorem ipsum dolor sit amet.</div></article>
+                                    <article><img src="/images/traditional-irish-pub-design-e1485517760997.jpg" alt="interrior"><div class="lower_text">Lorem ipsum dolor sit amet.</div></article>
+                                    <article><img src="/images/traditional-irish-pub-design-e1485517760997.jpg" alt="interrior"></article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                    </article>
+                </div>
+                        <!---------------------------------------------------------------------------------------Food menu previews------------------------->
+                <a class="anchor" name="food_menu" id="food_menu"></a>
+                <div class="food_menu">
+                    <div class="row">
+                        <div class="menu"></div>
+                        <div class="food_item">
+                            <div class="food_image"><img src="/images/BRU_BEER.jpg" class="food_thumbnail"></div>
+                            <div class="food_textabout">
+                                <h2>Booze</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam aspernatur deleniti enim?</p>
+                            </div>
+                        </div>
+                        <div class="food_item">
+                            <div class="food_image"><img src="/images/cabo-1024x768.jpg" class="food_thumbnail"></div>
+                            <div class="food_textabout">
+                                <h2>Burger</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam aspernatur deleniti enim?</p>
+                            </div>
+                        </div>
+                        <div class="food_item ">
+                            <div class="food_image"><img src="/images/steak on the grill with grill marks.JPG" class="food_thumbnail"></div>
+                            <div class="food_textabout">
+                                <h2>Grill</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam aspernatur deleniti enim?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row item_and_shortcut">
+                        <div class="menu_advert">
+                            <h1>Something about us and menu</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda cumque debitis delectus deserunt dicta dolor doloremque enim ex, explicabo hic libero minus nemo pariatur porro provident quidem, quo reiciendis rem totam voluptas voluptatem voluptatibus. Aut ducimus ea eius, esse et expedita in iure minus mollitia non nulla officia pariatur similique, soluta tenetur! Adipisci animi dignissimos eius eligendi exercitationem laborum maxime ut? Animi aperiam aspernatur consequatur et ex expedita explicabo incidunt ipsum labore libero nam neque nihil odio optio provident quae quasi quis quod ratione, repellendus sit sunt tenetur voluptatum. Et in ipsam, itaque laborum optio quis rerum suscipit tenetur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda cumque debitis delectus deserunt dicta dolor doloremque enim ex, explicabo hic libero minus nemo pariatur porro provident quidem, quo reiciendis rem totam voluptas voluptatem voluptatibus. Aut ducimus ea eius, esse et expedita in iure minus mollitia non nulla officia pariatur similique, soluta tenetur! Adipisci animi dignissimos eius eligendi exercitationem laborum maxime ut? Animi aperiam aspernatur consequatur et ex expedita explicabo incidunt ipsum labore libero nam neque nihil odio optio provident quae quasi quis quod ratione, repellendus sit sunt tenetur voluptatum. Et in ipsam, itaque laborum optio quis rerum suscipit tenetur.</p>
+                            
+                            <!--shortcut to the full menu-->
+                            <div class="food_menu_shortcut"><a href="./foodmenu"><h1>GO TO FULL MENU!!</h1></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                   <!---------------------------------------------------------------------------------------contacts block-->
+                <a class="anchor" name="contacts" id="contacts"></a>
+                <div class="contacts">
+                    <div class="row text-mid">
+                        <h1 class="contacts_header"><u>Where are we?</u></h1>
+                        <p class="address">
+                        <address>
+                        <strong>Black Buttons, pub and grill</strong><br>
+                            Some location <br>
+                            Some more exat location <br>
+                            New York (because it is on the map)<br>
+                        </address>
+                        <address>
+                            mail to: <a href="#">bbuttons@mail.com</a><br>
+                            phone: +0 123-456-78-90
+                        </address>
+                        </p>
+                    </div>
+                    <div class="row map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43158.81274337352!2d-73.95842778509589!3d40.63521580982551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1533026680783" width="100%" height="600" frameborder="0" marginwidth="25px" style="border:2px solid white" allowfullscreen>
+                        </iframe>
+                        <br>
+                            Thanks Google for map =)
+                    </div>
+                </div>
+
+
+    <!--parallax end-->
+    </section>
+    <div class="empty"></div>
+</div>
+
+<!--and here goes footer-->
+<footer class="footer">
+    <div class="container footer_items">
+            <div class="footer_item">
+                <div class="sprites">
+                    <a href="#"><div class="sprite fb"></div></a>
+                    <a href="#"><div class="sprite twitter"></div></a>
+                    <a href="#"><div class="sprite telegram"></div></a>
+                    <a href="#"><div class="sprite instagram"></div></a>
+                </div>
+            </div>
+            <div class="footer_item">
+                    Web-site was created for educational purposes only. <br><br>
+                    Main Academy Mykolaiv. <br>
+                    2018.
+            </div>
+            <div class="footer_item">
+                For any additional info:
+                <address>
+                    <strong>phone</strong>: +1 234-567-89
+                </address>
+            </div>
+            <div class="footer_item">
+                <a href="#">Privacy policy</a><br><br>
+                <a href="#">Terms of use</a>
+            </div>
+        </div>
+</footer>
+   
+    <!--popups-->
+    <div class="popup_container">
+    <!--login popup-->
+    <div class="login_popup popup slide_in">
+        <h2>PLease, enter your credentials</h2>
+        <form name="login_popup">
+            <p>Enter login:</p>
+            <input type="text" name="login" placeholder="login" required>
+            <p>Enter password</p>
+            <input type="password" name="password" required>
+            
+            <div class="login_form_control">
+            <input type="submit" value="OK" id="login_submit_button">
+            <button type="button" class="popup_close_button">Close</button>
+            </div>        
+        </form>
+        <p>Do not have login? Please, <span id="registration_button">register</span>.</p>
+    </div>
+
+    <!--Registration popup-->
+    <div class="reg_popup popup slide_in">
+        <h2>Please, register.</h2>
+        <form name="reg_form">
+            <p>Enter Name</p>
+            <input type="text" name="name" placeholder="John" required>
+            <p>Enter Surname</p>
+            <input type="text" name="surname" placeholder="Doe" required>
+            <p>Enter your E-mail</p>
+            <input type="text" name="mail" placeholder="JDoe@mail.com" required>
+            <p>Enter your login</p>
+            <input type="text" name="login" placeholder="login" required>
+            <p>Enter password</p>
+            <input type="password" name="password" placeholder="" required>
+            
+            <div class="reg_form_control">
+            <input type="submit" value="OK" id="registration_submit_button">
+            <button type="button" class="popup_close_button">Close</button>
+            </div>
+        </form>
+    </div>
+
+
+<!--end of popup container-->
+</div>
+
+
+
+
+</body>
+</html>

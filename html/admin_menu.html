@@ -1,0 +1,68 @@
+<div class="buttons_container">
+<div class="button_row">
+    <button class="menu_buttons" type="button" id="menu_add_item">Add item</button>
+    <button class="menu_buttons" type="button" id="menu_see_menu">See menu</button>
+    
+</div>
+</div>
+
+<div class="menu_add_popup_wrapper">
+    <div class="popup_background"></div>
+    <div class="menu_popup_container">
+        <div class="popup_content">
+            <div class="menu_add_popup_header"> Add an item to menu </div>
+
+            <form name="adding_menu_item">
+                <div class="flex">
+                    <label for="">Name:</label>
+                    <input name="name" type="text" required>
+                </div>
+                <div class="flex">
+                    <label for="">section of menue</label>
+                    <select name="section">
+                        
+                        <option value='/menu_burger_db_save'>burgers</option>
+                        <option value='/menu_grill_db_save'>grill</option>
+
+                    </select>
+                </div>
+                <div class="flex">
+                    <label for="">Info</label>
+                    <textarea name="info" required></textarea>
+                </div>
+
+                <div class="flex">
+                    <label for="">Cost</label>
+                    <input type="text" size="4" required name="cost">
+                </div>
+
+                <div class="ingredients">
+                    <div class="flex">
+                    <label for="">Ingredients</label>
+                    <button type="button" id="ingredient_add_button">Add ingredient</button>
+                    </div>
+                    <div class="ingredients_container">
+                    <!--
+                    <div class="ingredients_item">
+                        <select name="ingrids" id="" >
+                            
+                            <option value="salt">Salt</option>
+                        </select>
+                        <input type="text" placeholder="amount" size="4" name = "amount">
+                        <span class="new_item_units">grams</span>
+                        <button type="button">X</button>
+                    </div>
+                    -->
+                    </div>
+
+                </div>
+
+                <div class="flex">
+                    <button>OK</button>
+                    <button type="button" id="menu_item_add_cancel_button">Cancel</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
